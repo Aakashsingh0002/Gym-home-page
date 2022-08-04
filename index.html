@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness League Gym</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* css reset  */
+      body {
+        margin: 0px;
+        padding: 0px;
+        background: url("img/risen-wang-20jX9b35r_M-.png");
+        height: 1480px;
+        color: white;
+      }
+      /* left work  */
+      .left {
+        display: inline-block;
+        position : absolute;
+        left : 20px;
+        top : 20px;
+      }
+      .left img {
+        width: 100px;
+      }
+      .left div {
+        text-align: center;
+        color: white;
+        font-family: "Baloo Bhaina 2", cursive;
+      }
+      /* middle work  */
+      .middle {
+        display: block;
+        width: 50%;
+        margin: 20px auto;
+        font-family: "Baloo Bhaina 2", cursive;
+        text-align: center;
+      }
+      .navbar li {
+        display: inline;
+        font-size: 20px;
+      }
+      .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 10px;
+        margin: 3px 18px;
+      }
+      .navbar li a:hover,
+      .navbar li a.active {
+        text-decoration: none;
+        color: grey;
+
+      }
+      /* right work  */
+      .right {
+        display: inline-block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+      }
+      .btn {
+        font-family: "Baloo Bhaina 2", cursive;
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 4px 10px;
+        border: 2px splid grey;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+      }
+      .btn:hover {
+        background-color: rgb(31, 30, 30);
+        /* form section  */
+      }
+      .container {
+        margin: 354px 146px;
+        padding: 25px 20px;
+        width: 30%;
+      }
+      .container h1 {
+        text-align: center;
+        color: #495c86;
+        background-color: #80ffff;
+        font-family: "Baloo Bhaina 2", cursive;
+      }
+      .form-group input {
+        display: block;
+        width: 370px;
+        border: 2px solid black;
+        text-align: center;
+        padding: 9px;
+        border-radius: 10px;
+        margin: 7px auto;
+        font-family: "Baloo Bhaina 2", cursive;
+      }
+      .container button {
+        display: block;
+        margin: 7px auto;
+        width: 392px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <!-- left for logo -->
+      <div class="left">
+        <img src="img/downloadlogo2.jpg" alt="" />
+        <div>Fitness Track</div>
+      </div>
+      <!-- mid for navbar -->
+      <div class="middle">
+        <ul class="navbar">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Fitness Calculater</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- right for buttons -->
+      <div class="right">
+        <button class="btn">Call us</button>
+        <button class="btn">Email us</button>
+      </div>
+    </header>
+    <div class="container">
+      <h1>Join our Gym Now</h1>
+      <form action="reaction.php">
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Name" />
+          <input type="text" name="" placeholder="Enter your Age" />
+          <input type="text" name="" placeholder="Enter your Gender" />
+          <input type="text" name="" placeholder="Enter your Locality" />
+          <button class="btn">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
